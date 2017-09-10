@@ -1,0 +1,17 @@
+<p>Parses the Quality Gate from SonarQube</p>
+<p>This is achieved by parsing the Task ID from .sonar/report-task.txt<br>
+Afterwards this Task ID is used to retrieve the AnalysisID from /api/ce/task?id=TASKID<br>
+Finally the Results are parsed from /api/qualitygates/project_status?analysisId=ANALYSISID
+</p>
+<p>Parameters:<br>
+<ul>
+<li>
+sonarUrl - the URL of SonarQube, user, password
+</li>
+<li>
+user - SonarQube Username
+</li>
+<li>
+password - SonarQube Password
+</li>
+</p>
